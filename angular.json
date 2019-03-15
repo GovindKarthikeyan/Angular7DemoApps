@@ -137,5 +137,8 @@
       }
     }
   },
-  "defaultProject": "EpicPayPal"
+  "defaultProject": "EpicPayPal",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
