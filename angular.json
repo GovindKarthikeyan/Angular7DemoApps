@@ -10,7 +10,8 @@
       "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "style": "sass",
+          "defaultCollection": "@ngrx/schematics"
         }
       },
       "architect": {
@@ -137,8 +138,5 @@
       }
     }
   },
-  "defaultProject": "EpicPayPal",
-  "cli": {
-    "defaultCollection": "@ngrx/schematics"
-  }
+  "defaultProject": "EpicPayPal"
 }
