@@ -1,0 +1,5 @@
+ng config cli.defaultCollection @ngrx/schematics
+
+ng g reducer core/store/reducers/payment --reducers index.ts -d
+ng g effect core/store/effects/payment --module app.module -d
+ng g action core/store/actions/payment -d

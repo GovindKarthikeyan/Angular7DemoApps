@@ -6,6 +6,9 @@ import { PayPalComponent } from './pay-pal.component';
   declarations: [PayPalComponent],
   imports: [
     CommonModule
+  ],
+  exports: [
+    PayPalComponent
   ]
 })
 export class PayPalModule { }
