@@ -10,7 +10,7 @@ export class PaypalService {
   constructor(private http: HttpClient) { }
 
   public setExpressCheckOut(): Observable<any> {
-    return of('Hello World !!!');          
+    return this.http.get('https://localhost:44358/api/payment/setexpresscheckout');       
   }
 
 }
