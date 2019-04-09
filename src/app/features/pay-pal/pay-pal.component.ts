@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewChecked, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { PaypalService } from 'src/app/core/services/paypal.service';
+import {  map, tap } from 'rxjs/operators';
 
 declare let paypal: any;
 @Component({
@@ -13,8 +14,8 @@ export class PayPalComponent implements OnInit, AfterViewChecked {
   paypalLoad: boolean = true;
   finalAmount: number = 1;
   payPalConfig = {
-      createOrder: (d, a) => this.payPalService.setExpressCheckOut().toPromise(),
-      onApprove: (d, a) => a.order.capture().then((d) => console.log(d)),
+      createOrder: (d, a) => this.payPalService.setExpressCheckOut(d, a).pipe(tap(r => console.log(`createOrder() => : ${JSON.stringify(r)}`))).toPromise(),
+      onApprove: (d, a) =>  this.payPalService.approve(d, a).pipe(map(r => console.log(`onApprove() => : ${JSON.stringify(r)}`))).toPromise(),
       onCancel: (d, a) => console.log(d),
       onError: (d, a) => console.log(d)            
   };
@@ -23,7 +24,7 @@ export class PayPalComponent implements OnInit, AfterViewChecked {
     @Inject(DOCUMENT) private doc: Document,
     private payPalService: PaypalService) { }
   
-  ngOnInit() {}
+  ngOnInit() { }
 
   ngAfterViewChecked(): void {
     if (!this.addScript) {
