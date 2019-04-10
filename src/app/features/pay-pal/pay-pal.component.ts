@@ -13,6 +13,7 @@ export class PayPalComponent implements OnInit, AfterViewChecked {
   addScript: boolean = false;
   paypalLoad: boolean = true;
   finalAmount: number = 1;
+
   payPalConfig = {
       createOrder: (d, a) => this.payPalService.setExpressCheckOut(d, a).pipe(tap(r => console.log(`createOrder() => : ${JSON.stringify(r)}`))).toPromise(),
       onApprove: (d, a) =>  this.payPalService.approve(d, a).pipe(map(r => console.log(`onApprove() => : ${JSON.stringify(r)}`))).toPromise(),

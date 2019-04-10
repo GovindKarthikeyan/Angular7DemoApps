@@ -19,7 +19,7 @@ export class PaypalService {
     console.log('approve()');
     console.log(d);
     console.log(a);
-    const body = { orderId: d.orderID, payerId: d.payerID };
+    const body = { tokenId: d.orderID, orderId: d.orderID, payerId: d.payerID };
    return this.http.post(`https://localhost:44358/api/payment/approve`, body);
   }
 }
