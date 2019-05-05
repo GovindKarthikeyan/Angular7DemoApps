@@ -16,23 +16,23 @@ import { CoreModule } from './core/core.module';
 import { PaymentEffects } from './core/store/effects/payment.effects';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ContactUsComponent,
-    AboutUsComponent
-  ],
-  imports: [
-    CoreModule,
-    BrowserModule,
-    AppRoutingModule,
-    HomeModule,
-    PayPalModule,
-    StoreModule.forRoot(reducers, { metaReducers }),
-    !environment.production ? StoreDevtoolsModule.instrument() : [],
-    EffectsModule.forRoot([AppEffects]),
-    EffectsModule.forFeature([PaymentEffects]),
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		ContactUsComponent,
+		AboutUsComponent
+	],
+	imports: [
+		CoreModule,
+		BrowserModule,
+		AppRoutingModule,
+		HomeModule,
+		PayPalModule,
+		StoreModule.forRoot(reducers, { metaReducers }),
+		!environment.production ? StoreDevtoolsModule.instrument() : [],
+		EffectsModule.forRoot([AppEffects]),
+		EffectsModule.forFeature([PaymentEffects]),
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }

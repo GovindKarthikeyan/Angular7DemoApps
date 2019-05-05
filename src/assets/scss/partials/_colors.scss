@@ -1,0 +1,59 @@
+/* GRAY SITE - comment out the Primary Brand colors below */
+$black-grey: #000000;
+$white-grey: #ffffff;
+$primary-grey: #D7D7D7;
+
+$action-grey: #5E5E5E;
+$action-link-grey: #5D5D5D;
+$citypicker-link-grey: #424242;
+$error-grey: #424242;
+$support-grey: #5D5D5D;
+
+$primary-tertiary-grey: #F3F3F3;
+$action-tertiary-grey: #A1A1A1;
+$error-tertiary-grey: #9F9F9F;
+$charcoal-grey: #333333;
+$gunmetal-grey: #707070;
+$gray-grey: #CCCCCC;
+$dolphin-grey: #E2E2E2;
+$timberwolf-grey: #EFEFEF;
+$facebook-blue-grey:#5E5E5E;
+
+body.grey-site .btn-primary:not(:disabled):not(.disabled):active {
+	background-color: $action-link-grey;
+	border-color: $action-grey;
+}
+
+body.grey-site .btn-primary:focus {
+	box-shadow: 0 0 0 0.2rem $gunmetal-grey;
+}
+
+
+/*PRIMARY BRAND*/
+/* Spirit Black */
+$black: #000000;
+/* Spirit White */
+$white: #ffffff;
+/* Spirit Yellow */
+$primary: #FFEC00;
+/* Spirit Sea & Sky */
+$sea-sky: #66dfdb;
+/* Spirit Blue */
+$action: #0073E6;
+$action-link: #0056b3;
+$citypicker-link: #3455DB;
+/* Spirit Red */
+$error: #DC0000;
+$support: #2F7F29;
+
+$primary-tertiary: #FDF9C2;
+$action-tertiary: #73ace5;
+$error-tertiary: #F57A7A;
+$charcoal: #333333;
+$gunmetal: #707070;
+$gray: #CCCCCC;
+$dolphin: #E2E2E2;
+/* Spirit Gray */
+$timberwolf: #EFEFEF;
+
+$facebook-blue:#3B5998;

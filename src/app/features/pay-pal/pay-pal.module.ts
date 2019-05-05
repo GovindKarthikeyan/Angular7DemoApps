@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { PayPalComponent } from './pay-pal.component';
 
 @NgModule({
-  declarations: [PayPalComponent],
-  imports: [
-    CommonModule
-  ],
-  exports: [
-    PayPalComponent
-  ]
+	declarations: [
+		PayPalComponent
+	],
+	imports: [
+		CommonModule
+	],
+	exports: [
+		PayPalComponent
+	]
 })
 export class PayPalModule { }

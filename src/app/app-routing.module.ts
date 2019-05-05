@@ -6,34 +6,34 @@ import { ContactUsComponent } from './features/contact-us/contact-us.component';
 import { AboutUsComponent } from './features/about-us/about-us.component';
 
 const routes: Routes = [
-  {
-    path: 'home',
-    component:HomeComponent
-  },
-  {
-    path: 'paypal',
-    component: PayPalComponent
-  },
-  {
-    path: 'about',
-    component: AboutUsComponent
-  },
-  {
-    path: 'contactus',
-    component: ContactUsComponent
-  },
-  {
-    path: '',
-    component: HomeComponent
-  }
+	{
+		path: 'home',
+		component: HomeComponent
+	},
+	{
+		path: 'paypal',
+		component: PayPalComponent
+	},
+	{
+		path: 'about',
+		component: AboutUsComponent
+	},
+	{
+		path: 'contactus',
+		component: ContactUsComponent
+	},
+	{
+		path: '',
+		component: HomeComponent
+	}
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes)
-  ],
-  exports: [
-    RouterModule
-  ]
+	imports: [
+		RouterModule.forRoot(routes)
+	],
+	exports: [
+		RouterModule
+	]
 })
 export class AppRoutingModule { }

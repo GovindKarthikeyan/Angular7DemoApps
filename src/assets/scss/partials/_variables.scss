@@ -1,0 +1,299 @@
+/* MAIN FONT */
+
+$main-font-family: 'Source_Sans_Pro',
+Verdana,
+sans-serif;
+$main-font-weight: 700;
+$main-font-lead-size: 1.33rem;
+$main-font-lead-line-height: 1.55rem;
+
+$main-font-textlink-size: 1.13rem;
+$main-font-textlink-line-height: 1.13rem;
+
+
+$main-font-size: 1rem;
+$main-font-line-height: 1.125rem;
+
+$main-font-small-size: 0.88rem;
+$main-font-small-line-height: 1rem;
+$main-font-legal-size: 0.75rem;
+$main-font-legal-line-height: 0.88rem;
+/* HEADINGS */
+
+$headings-font-family: 'Source_Sans_Pro_Black',
+Verdana,
+sans-serif;
+$headings-font-weight: 900;
+$h1-font-size: 2.44rem;
+$h1-line-height: 2.66rem;
+$h2-font-size: 2rem;
+$h2-line-height: 2.33rem;
+$h3-font-size: 1.625rem;
+$h3-line-height: 2.11rem;
+$h4-font-size: 1.375rem;
+$h4-line-height: 1.83rem;
+$h5-font-size: 1.125rem;
+$h5-line-height: 1.222rem;
+$h6-font-size: 0.88rem;
+$h6-line-height: 1rem;
+/* HERO */
+
+$hero-font: 'Source_Sans_Pro_Black',
+Verdana,
+sans-serif;
+$hero-font-weight: 900;
+$hero-headline: 2.223rem;
+$hero-lead-font: 'Source_Sans_Pro_Black',
+Verdana,
+sans-serif;
+$hero-lead-font-size: 1.33rem;
+$hero-lead-font-weight: 700;
+$hero-pricing-font: 'Source_Sans_Pro_Black',
+Verdana,
+sans-serif;
+$hero-pricing-font-weight: 900;
+$hero-pricing-font-size: 5.5rem;
+/* BUTTONS */
+
+$button-font: 'Source_Sans_Pro_Black',
+Verdana,
+sans-serif;
+$button-font-weight: 900;
+$button-font-size: 1.333rem;
+$button-font-size-sm: 1.111rem;
+$button-font-size-link-sm: 1rem;
+
+/* unused */
+/* 	$button-font-size-lg: 1.667rem;
+	$button-font-size-link-lg: 1.667rem; */
+
+/* OTHER */
+
+$tab-font: 'Source_Sans_Pro_Black',
+Verdana,
+sans-serif;
+/* FORM CONTROL */
+
+$title-text-font: 'Source_Sans_Pro_Black',
+Verdana,
+sans-serif;
+$title-text-font-size: 1rem;
+$title-text-font-weight: 700;
+
+$form-control-height: 2.77rem;
+$form-control-hint-text-weight: 400;
+$form-control-hint-text-size: 1rem;
+
+$radio-size: 1.2223rem;
+$radio-size-focus: 0.7778rem;
+$radio-border-radius: 50%;
+$checkbox-size: 1.333rem;
+/* MOBILE HEADLINES */
+
+$m-h1-font-size: 1.55rem;
+$m-h1-line-height: 1.88rem;
+$m-h2-font-size: 1.375rem;
+$m-h2-line-height: 1.83rem;
+$m-h3-font-size: 1.22rem;
+$m-h3-line-height: 1.55rem;
+$m-h4-font-size: 1.11rem;
+$m-h4-line-height: 1.22rem;
+$m-h5-font-size: 1rem;
+$m-h5-line-height: 1.11rem;
+$m-h6-font-size: 0.88rem;
+$m-h6-line-height: 1rem;
+/* MOBILE MAIN FONT */
+
+$m-main-font-lead-size: 1.22rem;
+$m-main-font-lead-line-height: 1.44rem;
+$m-main-font-large-size: 1rem;
+$m-main-font-large-line-height: 1.22rem;
+
+$m-main-font-textlink-size: 1.13rem;
+/* PLACE HOLDER */
+$m-main-font-textlink-line-height: 1.13rem;
+/* PLACE HOLDER */
+
+$m-main-font-size: .89rem;
+$m-main-font-line-height: 1rem;
+
+
+$m-main-font-small-size: 0.77rem;
+$m-main-font-small-line-height: .88rem;
+$m-main-font-legal-size: .66rem;
+$m-main-font-legal-line-height: .77rem;
+/* MOBILE BUTTONS */
+
+/* $m-button-font: 'Source_Sans_Pro',
+Verdana,
+sans-serif;
+$m-button-font-weight: 900;
+$m-button-font-size: 1.22rem;
+$m-button-font-size-sm: 1rem; */
+
+/* BORDER RADIUS */
+
+/*  STANDARD 6px = .375rem */
+
+$border-radius-full: 0.375rem;
+/* FULL */
+
+$border-radius-top: 0.375rem 0.375rem 0 0;
+/* top - left and right only */
+
+$border-radius-bottom: 0 0 0.375rem 0.375rem;
+/* bottom - left and right only */
+
+$border-radius-right: 0 0.375rem 0.375rem 0;
+/* right - top and bottom only */
+
+$border-radius-left: 0.375rem 0 0 0.375rem;
+/* left - top and bottom only */
+
+/* ICON MOON */
+
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "fonts" !default;
+
+
+$icon-calendar-clock: "\e98c";
+$icon-exclamation-circle: "\e915";
+$icon-special-needs: "\e985";
+$icon-checked-bag: "\e98a";
+$icon-uatp-path1: "\e987";
+$icon-uatp-path2: "\e988";
+$icon-uatp-path3: "\e989";
+$icon-secondary-plane: "\e907";
+$icon-checkmark: "\e90b";
+$icon-youtube: "\e90d";
+$icon-hotel: "\e90f";
+$icon-car: "\e910";
+$icon-bars: "\e911";
+$icon-instagram: "\e912";
+$icon-surfboard: "\e914";
+$icon-shopping-cart: "\e918";
+$icon-baby: "\e919";
+$icon-theater: "\e91f";
+$icon-seats: "\e920";
+$icon-building: "\e927";
+$icon-bicycle: "\e928";
+$icon-question: "\e92e";
+$icon-tumblr: "\e958";
+$icon-twitter: "\e967";
+$icon-credit-card-back: "\e96a";
+$icon-camera: "\e976";
+$icon-promo-code: "\e977";
+$icon-hotel-car-food-cruise: "\e978";
+$icon-tsa-pre-check: "\e979";
+$icon-cog: "\e97a";
+$icon-gas-pump: "\e980";
+$icon-laptop: "\e981";
+$icon-snowflake: "\e982";
+$icon-spirit-social-icon-circle-path1: "\e901";
+$icon-spirit-social-icon-circle-path2: "\e960";
+$icon-spirit-social-icon-sonly: "\e970";
+$icon-spirit-social-icon-square-path1: "\e971";
+$icon-spirit-social-icon-square-path2: "\e973";
+$icon-facebook: "\e97b";
+$icon-view-password: "\e97c";
+$icon-hide-password: "\e97d";
+$icon-lock-closed: "\e97e";
+$icon-lock-open: "\e97f";
+$icon-extras-list: "\e900";
+$icon-check-in-extras: "\e902";
+$icon-shortcut-boarding-extras: "\e904";
+$icon-flight-flex-extras: "\e903";
+$icon-shortcut-security-extras: "\e905";
+$icon-primary-plane: "\e906";
+$icon-where-we-fly: "\e90a";
+$icon-vacation: "\e90c";
+$icon-calendar: "\e913";
+$icon-personal-item: "\e916";
+$icon-roundtrip-arrows: "\e917";
+$icon-phone: "\e91a";
+$icon-dollar-sign: "\e91e";
+$icon-confimation-email: "\e921";
+$icon-email-subscribe: "\e922";
+$icon-taxes: "\e926";
+$icon-clock: "\e923";
+$icon-gift: "\e924";
+$icon-circle-star: "\e95b";
+$icon-popular-banner: "\e92d";
+$icon-info-circle: "\e925";
+$icon-under-construction: "\e929";
+$icon-plus: "\e959";
+$icon-icon-circle: "\e95a";
+$icon-wifi: "\e92b";
+$icon-exclamation-triangle: "\e91b";
+$icon-minus-circle: "\e966";
+$icon-question-circle: "\e968";
+$icon-add-circle: "\e969";
+$icon-search: "\e974";
+$icon-magazine: "\e975";
+$icon-american-express-cc-path1: "\e92c";
+$icon-american-express-cc-path2: "\e962";
+$icon-american-express-cc-path3: "\e963";
+$icon-american-express-cc-path4: "\e964";
+$icon-american-express-cc-path5: "\e965";
+$icon-discover-path1: "\e92f";
+$icon-discover-path2: "\e930";
+$icon-discover-path3: "\e931";
+$icon-discover-path4: "\e932";
+$icon-discover-path5: "\e933";
+$icon-discover-path6: "\e934";
+$icon-discover-path7: "\e935";
+$icon-discover-path8: "\e936";
+$icon-discover-path9: "\e937";
+$icon-discover-path10: "\e938";
+$icon-discover-path11: "\e939";
+$icon-discover-path12: "\e93a";
+$icon-discover-path13: "\e93b";
+$icon-discover-path14: "\e93c";
+$icon-discover-path15: "\e93d";
+$icon-discover-path16: "\e93e";
+$icon-discover-path17: "\e93f";
+$icon-mastercard-path1: "\e940";
+$icon-mastercard-path2: "\e941";
+$icon-mastercard-path3: "\e942";
+$icon-mastercard-path4: "\e943";
+$icon-mastercard-path5: "\e944";
+$icon-mastercard-path6: "\e945";
+$icon-mastercard-path7: "\e946";
+$icon-mastercard-path8: "\e947";
+$icon-mastercard-path9: "\e948";
+$icon-mastercard-path10: "\e949";
+$icon-mastercard-path11: "\e94a";
+$icon-mastercard-path12: "\e94b";
+$icon-mastercard-path13: "\e94c";
+$icon-mastercard-path14: "\e94d";
+$icon-mastercard-path15: "\e94e";
+$icon-visa-path1: "\e94f";
+$icon-visa-path2: "\e950";
+$icon-visa-path3: "\e951";
+$icon-visa-path4: "\e952";
+$icon-visa-path5: "\e953";
+$icon-visa-path6: "\e954";
+$icon-visa-path7: "\e955";
+$icon-visa-path8: "\e956";
+$icon-check-mark: "\e957";
+$icon-thumbs-up: "\e96b";
+$icon-hashtag: "\e96c";
+$icon-arrow-right: "\e909";
+$icon-arrow-left: "\e96d";
+$icon-chevron-up: "\e96e";
+$icon-chevron-down: "\e95c";
+$icon-chevron-right: "\e95e";
+$icon-chevron-left: "\e96f";
+$icon-flag-large: "\e95d";
+$icon-partners-free-spirit: "\e972";
+$icon-carry-on: "\e98b";
+$icon-boarding-pass: "\e983";
+$icon-refreshments: "\e984";
+$icon-user: "\e908";
+$icon-cruise: "\e90e";
+$icon-global: "\e91c";
+$icon-star: "\e91d";
+$icon-travel-insurance: "\e986";
+$icon-email: "\e961";
+$icon-close: "\e92a";
+$icon-all-bags: "\e95f";
