@@ -1,0 +1,11 @@
+<p>
+	JSON file Stats :
+</p>
+<div class="row ml-2" *ngFor="let log of logDisplay">
+	<div class="col-6" *ngIf="!log?.Key">
+		<span>{{ log }}</span>
+	</div>
+	<div class="col-6" *ngIf="log?.Key?.length > 1">
+		<span>{{ (log?.Key +'-' +log?.Count) }}</span>
+	</div>
+</div>

@@ -4,11 +4,20 @@ import { PayPalComponent } from './features/pay-pal/pay-pal.component';
 import { HomeComponent } from './features/home/home.component';
 import { ContactUsComponent } from './features/contact-us/contact-us.component';
 import { AboutUsComponent } from './features/about-us/about-us.component';
+import { ExchangeComponent } from './features/exchange/exchange.component';
+import { CheckValueChangesComponent } from './features/check-value-changes/check-value-changes.component';
+import { AnalyzeJsonFileComponent } from './features/analyze-json-file/analyze-json-file.component';
+import { BuildingDemoComponent } from './features/building-demo/building-demo.component';
+import { PaymentComponent } from './features/payment/payment.component';
 
 const routes: Routes = [
 	{
 		path: 'home',
 		component: HomeComponent
+	},
+	{
+		path: 'payment',
+		component: PaymentComponent
 	},
 	{
 		path: 'paypal',
@@ -21,6 +30,22 @@ const routes: Routes = [
 	{
 		path: 'contactus',
 		component: ContactUsComponent
+	},
+	{
+		path: 'exchange',
+		component: ExchangeComponent
+	},
+	{
+		path: 'building',
+		component: BuildingDemoComponent
+	},
+	{
+		path: 'valuechange',
+		component: CheckValueChangesComponent
+	},
+	{
+		path: 'analyzejson',
+		component: AnalyzeJsonFileComponent
 	},
 	{
 		path: '',

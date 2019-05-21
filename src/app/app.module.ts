@@ -14,12 +14,23 @@ import { HomeModule } from './features/home/home.module';
 import { PayPalModule } from './features/pay-pal/pay-pal.module';
 import { CoreModule } from './core/core.module';
 import { PaymentEffects } from './core/store/effects/payment.effects';
+import { ExchangeComponent } from './features/exchange/exchange.component';
+import { CheckValueChangesComponent } from './features/check-value-changes/check-value-changes.component';
+import { FormsModule } from '@angular/forms';
+import { AnalyzeJsonFileComponent } from './features/analyze-json-file/analyze-json-file.component';
+import { BuildingDemoComponent } from './features/building-demo/building-demo.component';
+import { PaymentComponent } from './features/payment/payment.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		ContactUsComponent,
-		AboutUsComponent
+		AboutUsComponent,
+		ExchangeComponent,
+		CheckValueChangesComponent,
+		AnalyzeJsonFileComponent,
+		BuildingDemoComponent,
+		PaymentComponent
 	],
 	imports: [
 		CoreModule,
@@ -31,6 +42,7 @@ import { PaymentEffects } from './core/store/effects/payment.effects';
 		!environment.production ? StoreDevtoolsModule.instrument() : [],
 		EffectsModule.forRoot([AppEffects]),
 		EffectsModule.forFeature([PaymentEffects]),
+		FormsModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]

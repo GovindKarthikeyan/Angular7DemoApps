@@ -1,0 +1,84 @@
+<form #form="ngForm" (ngSubmit)="book()">
+	<span *ngIf="(ob$ | async) as obs">{{ obs | json }} </span>
+	<div class="row mb-3 mt-3">
+		<ng-container *ngTemplateOutlet="navitaireSection">
+		</ng-container>
+		<div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-0">
+			<div class="payment-card-container pl-3">
+				<div class="custom-control custom-radio pt-2">
+					<input id="radio-uplift" type="radio" name="paymentType" [ngModel]="pType" value="pType.Uplift"
+						class="custom-control-input" (click)="$event.stopPropagation();">
+					<label class="custom-control-label h4 text-capitalize upliftmobile"
+						for="radio-uplift">{{ 'Uplift' }}</label>
+				</div>
+				<div class="col d-flex justify-content-end">
+					<p class="h3 dollar-amount">Monthly {{ 10 | currency}}</p>
+				</div>
+			</div>
+		</div>
+		<ng-container *ngTemplateOutlet="payPalSection">
+		</ng-container>
+	</div>
+	<div class="row mb-3 ml-3 mt-3">
+		<div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-0 justify-content-end">
+			<button type="submit" class="btn btn-primary">Book Reservation</button>
+		</div>
+	</div>
+	<ng-template #navitaireSection>
+		<div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-0">
+			<div class="payment-card-container pl-3">
+				<div class="custom-control custom-radio pt-2">
+					<input id="radio-navitaire" type="radio" name="paymentType" [ngModel]="pType"
+						value="pType.Navitaire" class="custom-control-input" (click)="$event.stopPropagation();">
+					<label class="custom-control-label h4 text-capitalize upliftmobile"
+						for="radio-navitaire">{{'PAY IN FULL'}}</label>
+				</div>
+				<div class="col d-flex justify-content-end">
+					<p class="h3 dollar-amount">{{ 100 | currency}}</p>
+				</div>
+			</div>
+		</div>
+	</ng-template>
+	<ng-template #payPalSection>
+		<ng-container *ngIf="showPayPal">
+			<div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-0">
+				<div class="row">
+					<div class="col-12">
+						<div class="payment-card-container pl-3">
+							<div class="custom-control custom-radio pt-2">
+								<input id="radio-paypal" name="paymentType" type="radio" [ngModel]="pType"
+									value="pType.PayPal" class="custom-control-input"
+									(click)="$event.stopPropagation();">
+								<label class="custom-control-label h4 text-capitalize upliftmobile"
+									for="radio-paypal"></label>
+								<img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png"
+									alt="PayPal">
+							</div>
+							<div class="row">
+								<div class="col-12 d-flex justify-content-start">
+									<p class="pl-2 mb-0">{{ buyerEmail }}</p>
+								</div>
+								<div class="col-6 d-flex justify-content-start">
+									<p class="pl-2">American Express</p>
+								</div>
+								<div class="col-6 d-flex justify-content-end pr-5">
+									<p>Edit</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-4 col-lg-3 d-lg-flex align-items-center">
+				<div class="row">
+					<div class="col-12 col-lg-3 d-lg-flex align-items-center">
+						<p class="text-center mb-0 h3 text-uppercase">Or</p>
+					</div>
+					<div class="col-12 col-lg-9">
+						<app-pay-pal></app-pay-pal>
+					</div>
+				</div>
+			</div>
+		</ng-container>
+	</ng-template>
+</form>

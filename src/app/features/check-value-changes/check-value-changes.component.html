@@ -1,0 +1,6 @@
+	<span *ngIf="valueChanges$ | async as value">
+		{{ value | json }}
+	</span>
+	<form #form="ngForm">
+		<input type="text" name="txtName" ngModel>
+	</form>

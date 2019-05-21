@@ -1,0 +1,6 @@
+<p *ngIf="$buildingUnits | async as building">
+	{{ building | json }}
+</p>
+<div>
+	<button id="button1" name="button1" (click)="reloadBuildingUnits()">ClickMe!</button>
+</div>
