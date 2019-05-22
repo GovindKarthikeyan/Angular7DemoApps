@@ -1,0 +1,11 @@
+<form *ngIf="passengers$ | async as passengers; else loading" [formGroup]="profileForm">
+	<ng-container *ngFor="let passenger of passengers">
+		<div [formGroupName]="passenger.paxKey">
+			<input type="text" formControlName="name">
+		</div>
+	</ng-container>
+	<button (click)="log()"></button>
+</form>
+<ng-template #loading>
+	Loading Passengers...
+</ng-template>

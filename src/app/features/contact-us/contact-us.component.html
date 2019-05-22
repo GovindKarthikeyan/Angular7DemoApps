@@ -1,3 +1,11 @@
-<p>
-	contact-us works!
-</p>
+<form #form="ngForm">
+	<p>
+		contact-us works!
+	</p>
+	<ng-container *ngIf="obs$ | async as obs" ngModelGroup="passengers">
+		<div class="row" *ngFor="let x of obs; index as i;">
+			{{ x?.name }}
+			<input type="text" name="txtName{{i}}" ngModel>
+		</div>
+	</ng-container>
+</form>

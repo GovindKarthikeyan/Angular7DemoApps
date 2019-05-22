@@ -16,10 +16,11 @@ import { CoreModule } from './core/core.module';
 import { PaymentEffects } from './core/store/effects/payment.effects';
 import { ExchangeComponent } from './features/exchange/exchange.component';
 import { CheckValueChangesComponent } from './features/check-value-changes/check-value-changes.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AnalyzeJsonFileComponent } from './features/analyze-json-file/analyze-json-file.component';
 import { BuildingDemoComponent } from './features/building-demo/building-demo.component';
 import { PaymentComponent } from './features/payment/payment.component';
+import { ReactiveFromComponent } from './features/reactive-from/reactive-from.component';
 
 @NgModule({
 	declarations: [
@@ -30,7 +31,8 @@ import { PaymentComponent } from './features/payment/payment.component';
 		CheckValueChangesComponent,
 		AnalyzeJsonFileComponent,
 		BuildingDemoComponent,
-		PaymentComponent
+		PaymentComponent,
+		ReactiveFromComponent
 	],
 	imports: [
 		CoreModule,
@@ -42,7 +44,8 @@ import { PaymentComponent } from './features/payment/payment.component';
 		!environment.production ? StoreDevtoolsModule.instrument() : [],
 		EffectsModule.forRoot([AppEffects]),
 		EffectsModule.forFeature([PaymentEffects]),
-		FormsModule
+		FormsModule,
+		ReactiveFormsModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
