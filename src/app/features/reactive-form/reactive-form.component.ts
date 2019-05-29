@@ -4,11 +4,11 @@ import { take, delay } from 'rxjs/operators';
 import { of } from 'rxjs';
 
 @Component({
-	selector: 'app-reactive-from',
-	templateUrl: './reactive-from.component.html',
-	styleUrls: ['./reactive-from.component.scss']
+	selector: 'app-reactive-form',
+	templateUrl: './reactive-form.component.html',
+	styleUrls: ['./reactive-form.component.scss']
 })
-export class ReactiveFromComponent implements OnInit {
+export class ReactiveFormComponent implements OnInit {
 	passengers$ = of([
 		{ name: `Name : ${1}`, paxKey: 'a' },
 		{ name: `Name : ${2}`, paxKey: 'b' },

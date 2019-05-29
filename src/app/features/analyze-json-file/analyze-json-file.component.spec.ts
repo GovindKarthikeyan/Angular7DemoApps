@@ -3,23 +3,22 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { AnalyzeJsonFileComponent } from './analyze-json-file.component';
 
 describe('AnalyzeJsonFileComponent', () => {
-  let component: AnalyzeJsonFileComponent;
-  let fixture: ComponentFixture<AnalyzeJsonFileComponent>;
+	let component: AnalyzeJsonFileComponent;
+	let fixture: ComponentFixture<AnalyzeJsonFileComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ AnalyzeJsonFileComponent ]
-    })
-    .compileComponents();
-  }));
+	beforeEach(async(() => {
+		TestBed.configureTestingModule({
+			declarations: [AnalyzeJsonFileComponent]
+		}).compileComponents();
+	}));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(AnalyzeJsonFileComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+	beforeEach(() => {
+		fixture = TestBed.createComponent(AnalyzeJsonFileComponent);
+		component = fixture.componentInstance;
+		fixture.detectChanges();
+	});
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+	it('should create', () => {
+		expect(component).toBeTruthy();
+	});
 });

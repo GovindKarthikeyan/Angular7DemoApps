@@ -9,6 +9,7 @@ import { CheckValueChangesComponent } from './features/check-value-changes/check
 import { AnalyzeJsonFileComponent } from './features/analyze-json-file/analyze-json-file.component';
 import { BuildingDemoComponent } from './features/building-demo/building-demo.component';
 import { PaymentComponent } from './features/payment/payment.component';
+import { ReactiveFormComponent } from './features/reactive-form/reactive-form.component';
 
 const routes: Routes = [
 	{
@@ -46,6 +47,10 @@ const routes: Routes = [
 	{
 		path: 'analyzejson',
 		component: AnalyzeJsonFileComponent
+	},
+	{
+		path: 'reactive',
+		component: ReactiveFormComponent
 	},
 	{
 		path: '',

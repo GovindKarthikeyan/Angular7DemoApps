@@ -20,7 +20,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AnalyzeJsonFileComponent } from './features/analyze-json-file/analyze-json-file.component';
 import { BuildingDemoComponent } from './features/building-demo/building-demo.component';
 import { PaymentComponent } from './features/payment/payment.component';
-import { ReactiveFromComponent } from './features/reactive-from/reactive-from.component';
+import { ReactiveFormComponent } from './features/reactive-form/reactive-form.component';
 
 @NgModule({
 	declarations: [
@@ -32,7 +32,7 @@ import { ReactiveFromComponent } from './features/reactive-from/reactive-from.co
 		AnalyzeJsonFileComponent,
 		BuildingDemoComponent,
 		PaymentComponent,
-		ReactiveFromComponent
+		ReactiveFormComponent
 	],
 	imports: [
 		CoreModule,
