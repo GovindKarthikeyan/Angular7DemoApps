@@ -21,6 +21,7 @@ import { AnalyzeJsonFileComponent } from './features/analyze-json-file/analyze-j
 import { BuildingDemoComponent } from './features/building-demo/building-demo.component';
 import { PaymentComponent } from './features/payment/payment.component';
 import { ReactiveFormComponent } from './features/reactive-form/reactive-form.component';
+import { PassengersPageComponent } from './features/passengers-page/passengers-page.component';
 
 @NgModule({
 	declarations: [
@@ -32,7 +33,8 @@ import { ReactiveFormComponent } from './features/reactive-form/reactive-form.co
 		AnalyzeJsonFileComponent,
 		BuildingDemoComponent,
 		PaymentComponent,
-		ReactiveFormComponent
+		ReactiveFormComponent,
+		PassengersPageComponent
 	],
 	imports: [
 		CoreModule,

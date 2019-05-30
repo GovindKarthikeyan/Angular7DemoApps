@@ -1,0 +1,64 @@
+<section>
+	<form name="form" [formGroup]="form">
+		<div class="row ml-2">
+			<div class="col-12">
+				<h1> Passengers </h1>
+			</div>
+		</div>
+		<section formArrayName="passengers">
+			<section *ngFor="let group of form.get('passengers').controls; let i=index;" [formGroupName]="i">
+				<div class="row ml-2">
+					<div class="col-1">
+						<label for="title">Title</label>
+					</div>
+					<div class="col-11">
+						<input id="title" name="title" type="text" formControlName="title">
+					</div>
+				</div>
+				<div class="row ml-2">
+					<div class="col-1">
+						<label for="firstName">First Name</label>
+					</div>
+					<div class="col-11">
+						<input id="firstName" name="firstName" type="text" formControlName="firstName">
+					</div>
+				</div>
+				<div class="row ml-2">
+					<div class="col-1">
+						<label for="middleName">Middle Name</label>
+					</div>
+					<div class="col-11">
+						<input id="middleName" name="middleName" type="text" formControlName="middleName">
+					</div>
+				</div>
+				<div class="row ml-2">
+					<div class="col-1">
+						<label for="lastName">Last Name</label>
+					</div>
+					<div class="col-11">
+						<input id="lastName" name="lastName" type="text" formControlName="lastName">
+					</div>
+				</div>
+				<div class="row ml-2">
+					<div class="col-1">
+						<label for="dob">Date of birth</label>
+					</div>
+					<div class="col-11">
+						<input id="dob" name="dob" type="text" formControlName="dob">
+					</div>
+				</div>
+			</section>
+		</section>
+		<div class="row">
+			<div class="col-2">
+				<input type="button" name="btnAdd" (click)="add()" value="Add" />
+			</div>
+			<div class="col-2">
+				<input type="button" name="btnRemove" (click)="remove()" value="Remove" />
+			</div>
+			<div class="col-2">
+				<input type="button" name="btnClick" (click)="submitClick(form)" value="Click" />
+			</div>
+		</div>
+	</form>
+</section>

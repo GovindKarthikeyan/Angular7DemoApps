@@ -10,27 +10,29 @@ import { of } from 'rxjs';
 })
 export class ReactiveFormComponent implements OnInit {
 	passengers$ = of([
-		{ name: `Name : ${1}`, paxKey: 'a' },
-		{ name: `Name : ${2}`, paxKey: 'b' },
-		{ name: `Name : ${3}`, paxKey: 'c' },
-		{ name: `Name : ${4}`, paxKey: 'd' }
+		{ firstName: `firstName : ${1}`, middleName: '', lastName: `lastName: ${1}`, paxKey: 'a' },
+		{ firstName: `firstName : ${2}`, middleName: '', lastName: `lastName: ${1}`, paxKey: 'a' },
+		{ firstName: `firstName : ${3}`, middleName: '', lastName: `lastName: ${1}`, paxKey: 'a' },
+		{ firstName: `firstName : ${4}`, middleName: '', lastName: `lastName: ${1}`, paxKey: 'a' },
 	]).pipe(
 		delay(2000),
 		take(1));
+
 	profileForm: FormGroup;
 
 	constructor(private fb: FormBuilder) { }
 
 	ngOnInit() {
-		this.profileForm = this.fb.group({
-		});
+		this.profileForm = this.fb.group({});
 
 		this.passengers$.subscribe(passengers => {
 			console.log(passengers);
 
 			passengers.forEach(p => {
 				this.profileForm.addControl(p.paxKey, new FormGroup({
-					name: new FormControl(p.name, Validators.required)
+					firstName: new FormControl(p.firstName, Validators.required),
+					middleName: new FormControl(p.middleName),
+					lastName: new FormControl(p.lastName, Validators.required)
 				}));
 			});
 		})
